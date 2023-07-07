@@ -133,7 +133,7 @@ extension TinderViewController: ButtonStackViewDelegate, SwipeCardStackDataSourc
   func cardStack(_ cardStack: SwipeCardStack, cardForIndexAt index: Int) -> SwipeCard {
     let card = SwipeCard()
     card.footerHeight = 80
-    card.swipeDirections = [.left, .up, .right]
+    card.swipeDirections = [.left, .right]
     for direction in card.swipeDirections {
       card.setOverlay(TinderCardOverlay(direction: direction), forDirection: direction)
     }
